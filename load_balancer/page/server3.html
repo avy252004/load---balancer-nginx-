@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server 3</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #fce4ec; }
+        h1 { color: #c2185b; }
+        .server-info { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="server-info">
+        <h1>⭐ Server 3</h1>
+        <p>You are currently connected to <strong>Server 3</strong></p>
+        <p>Container Name: server3</p>
+        <p>Time: <span id="time"></span></p>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
