@@ -40,14 +40,14 @@ services:
 
   # Server 3
   server3:
-    image: nginx:alpine
-    container_name: server3
-    volumes:
-      - ./page/server3.html:/usr/share/nginx/html/index.html
+
+    build: ./slow-server
+    container_name: slow-server
     networks:
       - app-network
     expose:
       - "80"
+
 
 networks:
   app-network:
